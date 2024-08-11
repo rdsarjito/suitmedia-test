@@ -1,0 +1,30 @@
+.pagination {
+  display: flex;
+  margin: 5rem 0;
+  justify-content: center;
+  button {
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    padding: 0.8rem;
+    font-weight: 600;
+  }
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .active {
+    button {
+      background: var(--primary-color);
+      color: white;
+    }
+  }
+  .disabled {
+    color: grey;
+    background: grey;
+    button {
+      background: grey;
+    }
+  }
+}

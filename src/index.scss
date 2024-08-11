@@ -1,0 +1,39 @@
+:root {
+  font-family: 'Open Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --header-height: 70px;
+  --max-width: 1120px;
+  --primary-color: #EE672B;
+}
+
+body {
+  margin: 0;
+  place-items: center;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --max-width: 620px;
+  }
+}
+
+@media screen and (max-width: 408px) {
+  :root {
+    --max-width: 100%;
+  }
+}

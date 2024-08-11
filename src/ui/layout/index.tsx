@@ -1,21 +1,18 @@
 import { PropsWithChildren } from "react";
-import Footer from "./footer";
 import Header from "./header";
+import "./layout.style.scss";
 
 type Props = PropsWithChildren<{
-  title: string
+  title?: string;
 }>;
 
-const MainLayout = (props:Props) => {
+const MainLayout = (props: Props) => {
   return (
-    <div>
-      <Header title={props.title} />
-      <div>
-        {props.children}
-      </div>
-      <Footer />
+    <div className="layout">
+      <Header />
+      <main>{props.children}</main>
     </div>
   );
-}
+};
 
 export default MainLayout;

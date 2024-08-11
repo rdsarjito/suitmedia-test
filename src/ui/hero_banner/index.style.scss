@@ -1,0 +1,62 @@
+.hero_banner {
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  position: relative;
+  .hero_text {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+  }
+  .hero_image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 1s;
+    overflow: hidden;
+    position: relative;
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 2;
+    }
+    img {
+      position: relative;
+      z-index: 1;
+      object-fit: cover;
+    }
+    .diagonal_line {
+      background-color: white;
+      position: absolute;
+      top: 0;
+      left: -50px;
+      width: 260%;
+      height: 220px;
+      rotate: -5deg;
+      z-index: 4;
+      transform: translateY(240px);
+    }
+  } 
+  
+}
